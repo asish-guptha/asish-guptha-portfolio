@@ -32,7 +32,7 @@ const Contact = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          viewport={{ once: false, amount: 0.9}}
+          viewport={{ once: false, amount: 0.4}}
         >
           <h2 className="text-4xl sm:text-5xl font-bold text-textBright flex items-center justify-center mb-6">
             Get In Touch
@@ -47,7 +47,7 @@ const Contact = () => {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            viewport={{ once: false, amount: 0.9 }}
+            viewport={{ once: false, amount: 0.4 }}
             className="w-full lg:w-1/3 flex flex-col gap-8 text-left"
           >
             <div>
@@ -71,7 +71,7 @@ const Contact = () => {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: false, amount: 0.9 }}
+            viewport={{ once: false, amount: 0.4 }}
             className="w-full lg:w-2/3 bg-darkBg border border-textMuted/20 rounded-2xl p-8 shadow-2xl relative overflow-hidden group"
           >
             <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-6 text-left relative z-10">

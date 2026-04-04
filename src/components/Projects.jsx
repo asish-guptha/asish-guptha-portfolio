@@ -47,7 +47,7 @@ const Projects = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          viewport={{ once: false, amount: 0.9 }}
+          viewport={{ once: false, amount: 0.4 }}
           className="w-full lg:w-1/3 flex flex-col gap-6"
         >
           <div className="flex items-center gap-3 mb-2">
@@ -78,7 +78,7 @@ const Projects = () => {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            viewport={{ once: false, amount: 0.9 }}
+            viewport={{ once: false, amount: 0.4 }}
           >
             <h3 className="text-3xl sm:text-4xl font-bold text-textBright mb-8 flex items-center">
               Featured Projects
@@ -91,7 +91,7 @@ const Projects = () => {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.15, ease: "easeOut" }}
-                viewport={{once: false, amount: 0.9}}
+                viewport={{once: false, amount: 0.4}}
                 className="bg-darkBg border border-textMuted/20 rounded-xl p-6 flex flex-col justify-between group hover:-translate-y-2 hover:border-accent/50 hover:shadow-[0_10px_30px_-15px_rgba(59,130,246,0.3)] transition-all duration-300"
               >
                 <div>

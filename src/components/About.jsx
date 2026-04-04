@@ -10,7 +10,7 @@ const About = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: false, amount: 0.9 }}
+          viewport={{ once: false, amount: 0.4 }}
           className="w-full flex flex-col-reverse lg:flex-row items-center gap-12"
         >
           <div className="w-full lg:w-2/3">
@@ -36,7 +36,7 @@ const About = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          viewport={{ once: false, amount: 0.9}}
+          viewport={{ once: false, amount: 0.4 }}
           className="w-full"
         >
           <h3 className="text-2xl font-semibold text-textBright mb-8 font-mono border-b border-textMuted/20 pb-4 flex items-center gap-3">

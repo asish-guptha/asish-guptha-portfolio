@@ -119,7 +119,7 @@ export default function SkillGlobe() {
   return (
     <div style={{ width: '100%', height: '100%', position: 'relative' }}>
       <Canvas camera={{ position: [0, 0, 12], fov: 60 }}>
-        <ambientLight intensity={0.5} />
+        <ambientLight intensity={0.6} />
         <GlobeWithSkills />
         <OrbitControls enableZoom={false} enablePan={false} />
       </Canvas>
