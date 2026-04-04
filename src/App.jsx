@@ -12,6 +12,9 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
+
 function App() {
   const [showArrow, setShowArrow] = useState(false);
 
@@ -58,6 +61,19 @@ function App() {
           <FaArrowUp size={20} />
         </motion.button>
       )}
+
+      {showArrow && (
+        <motion.button
+          /* ... */
+        >
+          <FaArrowUp size={20} />
+        </motion.button>
+      )}
+
+      {/* VERCEL TRACKING TOOLS */}
+      <Analytics />
+      <SpeedInsights />
+      
     </div>
   );
 }
