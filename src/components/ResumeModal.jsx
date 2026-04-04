@@ -52,7 +52,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
               <div className="text-center mb-6">
                 <h1 className="text-3xl font-bold tracking-wide uppercase mb-2 text-white">Yechuri Asish Guptha</h1>
                 <p className="text-slate-400 text-sm">
-                  <a href="mailto:asishgupthayechuri4171@gmail.com" className="text-blue-400 hover:text-blue-300">asishgupthayechuri4171@gmail.com</a> | 06301456471 |<a href="https://www.linkedin.com/in/asish-guptha-7862a6231/" className="text-blue-400 hover:text-blue-300"> LinkedIn </a> |<a href="https://github.com/asish-guptha" className="text-blue-400 hover:text-blue-300"> GitHub </a> 
+                  <a href="mailto:asishgupthayechuri4171@gmail.com" className="text-blue-400 hover:text-blue-300">asishgupthayechuri4171@gmail.com</a> | 6301456471 |<a href="https://www.linkedin.com/in/asish-guptha-7862a6231/" className="text-blue-400 hover:text-blue-300"> LinkedIn </a> |<a href="https://github.com/asish-guptha" className="text-blue-400 hover:text-blue-300"> GitHub </a> 
                 </p>
               </div>
               
