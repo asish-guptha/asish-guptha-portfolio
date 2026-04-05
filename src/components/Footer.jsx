@@ -1,5 +1,6 @@
 import { FaHeart } from 'react-icons/fa';
 import { SiGithub } from 'react-icons/si';
+import { SiInstagram } from "react-icons/si";
 
 const Footer = () => {
   return (
@@ -18,6 +19,9 @@ const Footer = () => {
         </a>
         <a href="https://www.linkedin.com/in/asishguptha" className="text-textMuted hover:text-accent hover:-translate-y-1 transition-all duration-300 flex items-center justify-center">
           <span className="font-bold text-lg leading-none">in</span>
+        </a>
+        <a href="https://www.instagram.com/asish_guptha" className="text-textMuted hover:text-accent hover:-translate-y-1 transition-all duration-300">
+          <SiInstagram size={20} />
         </a>
       </div>
     </footer>

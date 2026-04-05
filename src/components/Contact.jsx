@@ -2,6 +2,7 @@ import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import { SiGithub } from 'react-icons/si';
+import { SiInstagram } from "react-icons/si";
 
 const Contact = () => {
   const form = useRef();
@@ -63,6 +64,7 @@ const Contact = () => {
               <div className="flex gap-4">
                 <a href="https://github.com/asish-guptha" className="p-3 bg-darkBg border border-textMuted/30 rounded-full text-textBright hover:border-accent hover:text-accent transition-colors"><SiGithub size={20} /></a>
                 <a href="https://www.linkedin.com/in/asishguptha" className="p-3 bg-darkBg border border-textMuted/30 rounded-full text-textBright hover:border-accent hover:text-accent transition-colors"><span className="font-bold">in</span></a>
+                <a href="https://www.instagram.com/asish_guptha" className="p-3 bg-darkBg border border-textMuted/30 rounded-full text-textBright hover:border-accent hover:text-accent transition-colors"><SiInstagram size={20} /></a>
               </div>
             </div>
           </motion.div>
