@@ -62,7 +62,7 @@ const Contact = () => {
               <h4 className="text-textBright font-bold text-xl mb-4">Socials</h4>
               <div className="flex gap-4">
                 <a href="https://github.com/asish-guptha" className="p-3 bg-darkBg border border-textMuted/30 rounded-full text-textBright hover:border-accent hover:text-accent transition-colors"><SiGithub size={20} /></a>
-                <a href="https://www.linkedin.com/in/asish-guptha-7862a6231/" className="p-3 bg-darkBg border border-textMuted/30 rounded-full text-textBright hover:border-accent hover:text-accent transition-colors"><span className="font-bold">in</span></a>
+                <a href="https://www.linkedin.com/in/asishguptha" className="p-3 bg-darkBg border border-textMuted/30 rounded-full text-textBright hover:border-accent hover:text-accent transition-colors"><span className="font-bold">in</span></a>
               </div>
             </div>
           </motion.div>

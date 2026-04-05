@@ -16,7 +16,7 @@ const Footer = () => {
         <a href="https://github.com/asish-guptha" className="text-textMuted hover:text-accent hover:-translate-y-1 transition-all duration-300">
           <SiGithub size={20} />
         </a>
-        <a href="https://www.linkedin.com/in/asish-guptha-7862a6231/" className="text-textMuted hover:text-accent hover:-translate-y-1 transition-all duration-300 flex items-center justify-center">
+        <a href="https://www.linkedin.com/in/asishguptha" className="text-textMuted hover:text-accent hover:-translate-y-1 transition-all duration-300 flex items-center justify-center">
           <span className="font-bold text-lg leading-none">in</span>
         </a>
       </div>
