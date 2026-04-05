@@ -78,11 +78,11 @@ const Contact = () => {
               <div className="flex flex-col sm:flex-row gap-6">
                 <div className="w-full sm:w-1/2 flex flex-col gap-2">
                   <label htmlFor="name" className="text-sm font-mono text-textBright">Name</label>
-                  <input type="text" id="name" name="from_name" required className="bg-transparent border border-textMuted/30 rounded-lg px-4 py-3 text-textBright focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all duration-300" placeholder="John Doe" />
+                  <input type="text" id="name" name="from_name" required className="bg-transparent border border-textMuted/30 rounded-lg px-4 py-3 text-textBright focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all duration-300" placeholder="Your Name" />
                 </div>
                 <div className="w-full sm:w-1/2 flex flex-col gap-2">
                   <label htmlFor="email" className="text-sm font-mono text-textBright">Email</label>
-                  <input type="email" id="email" name="reply_to" required className="bg-transparent border border-textMuted/30 rounded-lg px-4 py-3 text-textBright focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all duration-300" placeholder="john@example.com" />
+                  <input type="email" id="email" name="reply_to" required className="bg-transparent border border-textMuted/30 rounded-lg px-4 py-3 text-textBright focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all duration-300" placeholder="your email id@example.com" />
                 </div>
               </div>
               <div className="flex flex-col gap-2">
