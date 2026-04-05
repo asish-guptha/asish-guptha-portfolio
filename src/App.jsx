@@ -56,22 +56,14 @@ function App() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 20 }}
           onClick={() => scroll.scrollToTop({ duration: 800, smooth: 'easeInOutQuart' })}
-          aria-label="Scroll to top" /* <-- ADD THIS EXACT LINE */
+          aria-label="Scroll to top"
+          title="Scroll to top" 
           className="fixed bottom-8 right-6 sm:right-10 z-50 p-4 rounded-full bg-darkBg border border-accent text-accent hover:bg-accent hover:text-darkBg hover:-translate-y-2 transition-all duration-300 shadow-[0_0_15px_rgba(59,130,246,0.3)] flex items-center justify-center cursor-pointer"
         >
-          <FaArrowUp size={20} />
+          <FaArrowUp size={20} aria-hidden="true" focusable="false" />
         </motion.button>
       )}
-
-      {showArrow && (
-        <motion.button
-          /* ... */
-        >
-          <FaArrowUp size={20} />
-        </motion.button>
-      )}
-
-      {/* VERCEL TRACKING TOOLS */}
+      
       <Analytics />
       <SpeedInsights />
       

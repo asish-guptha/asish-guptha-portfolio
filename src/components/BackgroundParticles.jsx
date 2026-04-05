@@ -50,7 +50,7 @@ const BackgroundParticles = () => {
           value: 100, 
         },
         opacity: {
-          value: { min: 0.1, max: 0.5 },
+          value: { min: 0.2, max: 0.6 },
           animation: {
             enable: true,
             speed: 1,

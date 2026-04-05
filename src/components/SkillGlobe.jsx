@@ -55,9 +55,9 @@ const getSkillPoints = (numPoints, radius) => {
 
 const GlobeWithSkills = () => {
   const groupRef = useRef();
-  
+
   const globeDots = useMemo(() => getGlobeDots(1000, 4.5), []);
-  const skillPositions = useMemo(() => getSkillPoints(skillsData.length, 5), []); 
+  const skillPositions = useMemo(() => getSkillPoints(skillsData.length, 5), []);
 
   const dotGeometry = useMemo(() => {
     const geometry = new THREE.BufferGeometry();
@@ -81,7 +81,14 @@ const GlobeWithSkills = () => {
   return (
     <group ref={groupRef}>
       <points geometry={dotGeometry}>
-        <pointsMaterial size={0.04} color="#3b82f6" transparent opacity={0.6} />
+        <pointsMaterial
+          size={0.07}           
+          color="#60a5fa"
+          transparent
+          opacity={1}
+          toneMapped={false}
+          depthWrite={false}   
+        />
       </points>
 
       {skillsData.map((skill, index) => (
@@ -90,7 +97,7 @@ const GlobeWithSkills = () => {
           position={skillPositions[index]}
           center
           distanceFactor={10}
-          zIndexRange={[100, 0]} 
+          zIndexRange={[100, 0]}
         >
           <div
             style={{
@@ -103,7 +110,7 @@ const GlobeWithSkills = () => {
             }}
           >
             <div style={{ backgroundColor: '#f8fafc', padding: '4px', borderRadius: '50%', display: 'flex' }}>
-               <img src={skill.icon} alt={skill.name} style={{ width: '22px', height: '22px' }} />
+              <img src={skill.icon} alt={skill.name} style={{ width: '22px', height: '22px' }} />
             </div>
             <span style={{ color: '#f8fafc', fontWeight: 'bold', fontSize: '11px', textShadow: '0 0 5px #000' }}>
               {skill.name}
