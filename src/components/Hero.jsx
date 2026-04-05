@@ -16,7 +16,7 @@ const Hero = () => {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.5 }}
-        className="absolute top-8 right-8 sm:right-12 z-50"
+        className="absolute top-6 right-6 sm:top-8 sm:right-12 z-50"
       >
         <button
           onClick={() => setIsResumeOpen(true)}
@@ -27,7 +27,7 @@ const Hero = () => {
         </button>
       </motion.div>
       
-      <div className="w-full max-w-7xl flex flex-col lg:flex-row items-center justify-between gap-12 py-16 lg:py-0">
+      <div className="w-full max-w-7xl flex flex-col lg:flex-row items-center justify-between gap-12 pt-32 pb-16 lg:py-0">
         
         <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left gap-4 z-10 lg:min-w-[500px]">
           <p className="text-accent font-mono text-sm sm:text-base lg:text-lg tracking-wide">
