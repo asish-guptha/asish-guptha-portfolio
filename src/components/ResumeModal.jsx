@@ -62,7 +62,18 @@ const ResumeModal = ({ isOpen, onClose }) => {
                   Innovative Computer Science undergraduate and Full-Stack Developer experienced in building scalable, AI-integrated software systems. Adept at utilizing Python, React, Django, and PostgreSQL to develop robust applications, deployed seamlessly via Docker containerization. Passionate about solving complex engineering challenges, writing maintainable code, and contributing to dynamic teams to deliver data-driven digital products.
                 </p>
               </div>
-              
+
+              <div className="mb-6">
+                <h2 className="text-lg font-bold border-b-2 border-slate-600 text-white uppercase mb-2">Technical Skills</h2>
+                <ul className="text-sm space-y-1 text-slate-300">
+                  <li><span className="font-bold text-slate-100">Languages:</span> Python, JavaScript (ES6+), SQL, HTML5, CSS3</li>
+                  <li><span className="font-bold text-slate-100">Frontend Frameworks:</span> React.js, Tailwind CSS, Bootstrap 5</li>
+                  <li><span className="font-bold text-slate-100">Backend & Databases:</span> Django, Django REST Framework (DRF), PostgreSQL, SQLite, RESTful APIs</li>
+                  <li><span className="font-bold text-slate-100">Infrastructure & Tools:</span> Docker, Git/GitHub, Postman, JSON Server</li>
+                  <li><span className="font-bold text-slate-100">AI & Computer Vision:</span> Google Gemini API, OpenCV, YOLOv5, MediaPipe</li>
+                </ul>
+              </div>
+
               <div className="mb-6">
                 <h2 className="text-lg font-bold border-b-2 border-slate-600 text-white uppercase mb-2">Projects</h2>
                 
@@ -140,17 +151,6 @@ const ResumeModal = ({ isOpen, onClose }) => {
                     <div className="text-slate-400">CGPA: 6.3/10</div>
                   </div>
                 </div>
-              </div>
-              
-              <div className="mb-6">
-                <h2 className="text-lg font-bold border-b-2 border-slate-600 text-white uppercase mb-2">Technical Skills</h2>
-                <ul className="text-sm space-y-1 text-slate-300">
-                  <li><span className="font-bold text-slate-100">Languages:</span> Python, JavaScript (ES6+), SQL, HTML5, CSS3</li>
-                  <li><span className="font-bold text-slate-100">Frontend Frameworks:</span> React.js, Tailwind CSS, Bootstrap 5</li>
-                  <li><span className="font-bold text-slate-100">Backend & Databases:</span> Django, Django REST Framework (DRF), PostgreSQL, SQLite, RESTful APIs</li>
-                  <li><span className="font-bold text-slate-100">Infrastructure & Tools:</span> Docker, Git/GitHub, Postman, JSON Server</li>
-                  <li><span className="font-bold text-slate-100">AI & Computer Vision:</span> Google Gemini API, OpenCV, YOLOv5, MediaPipe</li>
-                </ul>
               </div>
               
               <div className="mb-8">
