@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { animateScroll as scroll } from 'react-scroll';
 import { FaArrowUp } from 'react-icons/fa';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import BackgroundParticles from './components/BackgroundParticles';
 import SideNav from './components/SideNav';
@@ -11,11 +12,13 @@ import Process from './components/Process';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import APMResume from './components/APMResume';
+import TSQAResume from './components/TSQAResume';
 
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 
-function App() {
+const MainPortfolio = () => {
   const [showArrow, setShowArrow] = useState(false);
 
   useEffect(() => {
@@ -39,9 +42,7 @@ function App() {
 
   return (
     <div className="text-textBright font-sans selection:bg-accent/30 overflow-x-hidden relative">
-      
       <BackgroundParticles /> 
-      
       <SideNav />
       <Hero />
       <About />
@@ -63,11 +64,25 @@ function App() {
           <FaArrowUp size={20} aria-hidden="true" focusable="false" />
         </motion.button>
       )}
+    </div>
+  );
+};
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        {/* Main 3D Website */}
+        <Route path="/" element={<MainPortfolio />} />
+
+        {/* The Custom Resume Pages */}
+        <Route path="/qa" element={<TSQAResume />} />
+        <Route path="/apm" element={<APMResume />} />
+      </Routes>
       
       <Analytics />
       <SpeedInsights />
-      
-    </div>
+    </Router>
   );
 }
 
