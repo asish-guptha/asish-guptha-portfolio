@@ -1,5 +1,5 @@
-import { FaHeart } from 'react-icons/fa';
-import { SiGithub } from 'react-icons/si';
+import { FaHeart } from "react-icons/fa";
+import { SiGithub } from "react-icons/si";
 import { SiInstagram } from "react-icons/si";
 
 const Footer = () => {
@@ -10,17 +10,29 @@ const Footer = () => {
         <FaHeart className="text-red-500 animate-pulse" />
         <span>by Asish</span>
       </div>
-      <div className="text-textMuted/50 text-xs font-mono">
-        &copy; {new Date().getFullYear()} Asish. All rights reserved.
+      <div className="text-textMuted/80 text-xs font-mono">
+        © {new Date().getFullYear()} Asish. All rights reserved.
       </div>
       <div className="flex gap-6">
-        <a href="https://github.com/asish-guptha" className="text-textMuted hover:text-accent hover:-translate-y-1 transition-all duration-300">
+        <a
+          href="https://github.com/asish-guptha"
+          aria-label="GitHub Profile"
+          className="text-textMuted hover:text-accent hover:-translate-y-1 transition-all duration-300"
+        >
           <SiGithub size={20} />
         </a>
-        <a href="https://www.linkedin.com/in/asishguptha" className="text-textMuted hover:text-accent hover:-translate-y-1 transition-all duration-300 flex items-center justify-center">
+        <a
+          href="https://www.linkedin.com/in/asishguptha"
+          aria-label="LinkedIn Profile"
+          className="text-textMuted hover:text-accent hover:-translate-y-1 transition-all duration-300 flex items-center justify-center"
+        >
           <span className="font-bold text-lg leading-none">in</span>
         </a>
-        <a href="https://www.instagram.com/asish_guptha" className="text-textMuted hover:text-accent hover:-translate-y-1 transition-all duration-300">
+        <a
+          href="https://www.instagram.com/asish_guptha"
+          aria-label="Instagram Profile"
+          className="text-textMuted hover:text-accent hover:-translate-y-1 transition-all duration-300"
+        >
           <SiInstagram size={20} />
         </a>
       </div>
