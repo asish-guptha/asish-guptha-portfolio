@@ -15,7 +15,7 @@ import Footer from "./components/Footer";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
-const MainPortfolio = () => {
+function App() {
   const [showArrow, setShowArrow] = useState(false);
 
   useEffect(() => {
@@ -69,6 +69,6 @@ const MainPortfolio = () => {
       <SpeedInsights />
     </div>
   );
-};
+}
 
 export default App;
