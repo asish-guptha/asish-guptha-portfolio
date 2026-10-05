@@ -6,6 +6,7 @@ const SideNav = () => {
     { id: "about", name: "About" },
     { id: "process", name: "Process" },
     { id: "projects", name: "Work" },
+    { id: "production", name: "Production" },
     { id: "contact", name: "Contact" },
   ];
 
